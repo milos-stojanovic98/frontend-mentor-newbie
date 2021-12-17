@@ -9,6 +9,7 @@
   --card-bg-color: hsl(216, 50%, 16%);
   --line-color: hsl(215, 32%, 27%);
   --white: hsl(0, 0%, 100%);
+  font-size: 18px;
 }
 
 * {
@@ -35,6 +36,50 @@
   font-size: 18px;
   font-family: "Outfit";
   border-radius: 12px;
+  box-shadow: 0px 20px 20px 20px black;
+}
+.img-container {
+  position: relative;
+  background: var(--card-bg-color);
+  background-clip: padding-box;
+  border-radius: 1rem;
+  opacity: 1;
+  height: 40vh;
+  width: 18vw;
+  margin-top: 20px;
+  border-radius: 12px;
+}
+.img-bgr {
+  display: block;
+  height: 100%;
+  width: 100%;
+  border-radius: 12px;
+}
+.img-eye {
+  opacity: 0;
+  width: 20%;
+  height: 20%;
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  margin: auto;
+}
+
+.img-container:hover,
+.img-container:focus {
+  background: var(--cyan);
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.img-container:hover .img-eye,
+.img-container:focus .img-eye {
+  opacity: 1;
+}
+
+.img-container:hover .img-bgr,
+.img-container:focus .img-bgr {
+  opacity: 0.5;
 }
 .heading {
   font-size: 20px;
@@ -48,20 +93,6 @@
 .paragraph {
   font-size: 16px;
   font-weight: 600;
-}
-.image {
-  background-image: url("./images/image-equilibrium.jpg");
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 40vh;
-  width: 18vw;
-  margin-top: 20px;
-  border-radius: 12px;
-}
-.image:hover {
-  content: url(./images//icon-view.svg);
-  color: var(--cyan);
 }
 .description {
   width: 18vw;
@@ -130,9 +161,9 @@
 @media only screen and (max-width: 375px) {
   .container {
     height: 100vh;
-    width: 80%;
-    margin-top: 60px;
-    margin-bottom: 60px;
+    width: 85%;
+    margin-top: 80px;
+    margin-bottom: 80px;
     padding-left: 25px;
     padding-right: 25px;
     display: flex;
@@ -140,12 +171,22 @@
     align-items: center;
     justify-content: center;
   }
-  .image {
+  .img-container {
     width: 100%;
-    height: 50%;
+    height: 60%;
+    margin-top: 35px;
+    margin-bottom: 0px;
+  }
+  .heading {
+    padding-bottom: 20px;
+  }
+  .paragraph {
+    padding-bottom: 10px;
+    line-height: 1.5;
   }
   .description {
     width: 100%;
+    height: 40%;
     display: flex;
     flex-direction: column;
     justify-content: center;
