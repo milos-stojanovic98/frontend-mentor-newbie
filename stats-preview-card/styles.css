@@ -55,6 +55,12 @@
     background-position: center center;
     background-size: cover;
 }
+.color-bgr{
+    height: 100%;
+    width: 100%;
+    background-color: var(--accent) ;
+    opacity: 0.5;
+}
 .heading-div{
     color: var(--main-heading-stats);
     font-family: var(--first-font);
