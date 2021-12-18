@@ -38,6 +38,7 @@
     flex-direction: row;
     justify-content: center;
     background-color: var(--card-background);
+    border-radius: 15px;
 }
 .left-side{
     min-width: 50%;
@@ -54,12 +55,14 @@
     background-image: url("./images/image-header-desktop.jpg");
     background-position: center center;
     background-size: cover;
+    border-radius: 15px;
 }
 .color-bgr{
     height: 100%;
     width: 100%;
     background-color: var(--accent) ;
     opacity: 0.5;
+    border-radius: 15px;
 }
 .heading-div{
     color: var(--main-heading-stats);
