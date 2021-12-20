@@ -60,18 +60,19 @@
     display:flex;
     flex-direction: column;
     align-items: left;
-    justify-content: space-evenly;
+    justify-content: flex-start;
 }
 h1{
-    padding-top: 5rem;
-    padding-bottom: 1rem;
+    padding-top: 9rem;
+    padding-bottom: 3rem;
     font-size: 2.5rem;
     font-weight: 700;
 }
 /* Question divs */
 .questions{
-    border-bottom: 1px solid var(--light-grayish-blue);
+   border-bottom: 1px solid var(--light-grayish-blue);
    padding-top: 1rem;
+   padding-bottom: 0.5rem;
 }
 /* Question spans */
 .question{
@@ -83,6 +84,9 @@ h1{
     justify-content: space-between;
     padding-bottom: 1rem;   
 }
+.question:hover{
+    color: var(--soft-red);
+}
 .paragraph{
     display: none; 
     color: var(--dark-grayish-blue);
@@ -92,4 +96,20 @@ h1{
 }
 .show-paragraph{
     display: block;
+}
+.arrow{
+    border: none;
+}
+.arrow:hover{
+    cursor: pointer;
+}
+.box{
+    background-image: url("./images/illustration-box-desktop.svg");
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    top: 45%;
+    left: 10%;
+    position: relative;
+    z-index: 1;
 }
