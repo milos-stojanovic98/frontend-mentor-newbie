@@ -104,12 +104,15 @@ h1{
     cursor: pointer;
 }
 .box{
-    background-image: url("./images/illustration-box-desktop.svg");
-    background-repeat: no-repeat;
-    height: 100%;
-    width: 100%;
+    position: absolute;
     top: 45%;
     left: 10%;
-    position: relative;
     z-index: 1;
+}
+.box-img{
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 100%;
+    width: 100%;
 }
