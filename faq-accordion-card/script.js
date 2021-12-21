@@ -1,5 +1,6 @@
 const questions = document.querySelectorAll(".questions");
 
+
 questions.forEach((question) => {
         const button = question.querySelector(".buttons");
 
@@ -11,6 +12,7 @@ questions.forEach((question) => {
                         }
                     });
                 question.classList.toggle("show-answer");
+
             });
     });
 

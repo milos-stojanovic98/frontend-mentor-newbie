@@ -122,3 +122,54 @@ p{
 .buttons img{
     height: 13px;   
 }
+.box-img-mobile{
+    display: none;
+}
+
+@media only screen and (max-width: 375px){
+    
+    .container{
+        height: 75%;
+        width: 80%;
+        margin: 0;
+        padding: 0;
+        top: 18%;
+        left: 10%;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+    }
+    .left-side{
+        background-image: url("./images/illustration-woman-online-mobile.svg");
+        background-position: center center;
+        position: absolute;
+        top: -18%;
+        height: 30%;
+        width: 100%;
+    }
+    .right-side{
+        height: 100;
+        width: 60%;
+        margin-left: 5rem;
+        margin-right: 0rem;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .box{
+        display: none;
+    }
+    h1{
+        padding-top: 7rem;
+        padding-bottom: 0rem;
+        font-size: 1.8rem;
+    }
+    p{
+        font-size: 1rem;
+        font-weight: 400;
+    }
+    .question{
+        padding-bottom: 0.5rem;   
+    } 
+}
