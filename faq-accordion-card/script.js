@@ -1,14 +1,31 @@
-const button = document.getElementById("buttonn");
-const paragraph = document.getElementById("paragraphh");
-const second = document.getElementById("second");
+const buttons = document.querySelectorAll(".buttons");
 
-button.addEventListener("click", () => toggle())
+buttons.forEach((button) => {
+        button.addEventListener("click", (e) => {
+            const question = e.currentTarget.parentElement.parentElement;
 
-const toggle = () => {
-    paragraph.classList.toggle("show-paragraph");
-    if(paragraph.classList.contains("show-paragraph")){
-        second.style.fontWeight = 900;
-    }else{
-        second.style.fontWeight = 400;
-    } 
-}
+            question.classList.toggle("show-answer");
+        });
+    });
+
+
+
+/* this code below hides all other answers when one is shown
+
+const questions = document.querySelectorAll(".questions");
+
+
+questions.forEach(function(question){
+    const button = question.querySelector(".buttons");
+   
+    button.addEventListener("click", function(){
+       
+        questions.forEach(function(item){
+            if(item !== question){
+                item.classList.remove("show-answer");
+            }
+        })
+        question.classList.toggle("show-answer");
+    });
+});
+*/
