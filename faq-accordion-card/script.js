@@ -1,18 +1,18 @@
 const questions = document.querySelectorAll(".questions");
 
-questions.forEach(function(question){
-    const button = question.querySelector(".buttons");
-   
-    button.addEventListener("click", function(){
-       
-        questions.forEach(function(item){
-            if(item !== question){
-                item.classList.remove("show-answer");
-            }
-        })
-        question.classList.toggle("show-answer");
+questions.forEach((question) => {
+        const button = question.querySelector(".buttons");
+
+        button.addEventListener("click", () => {
+
+                questions.forEach((item) => {
+                        if (item !== question) {
+                            item.classList.remove("show-answer");
+                        }
+                    });
+                question.classList.toggle("show-answer");
+            });
     });
-});
 
 
 /* this code below doesnt close other questions when one is active
