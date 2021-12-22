@@ -3,32 +3,44 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Ping coming soon page</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png"> 
+  <title>Ping coming soon page</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
 </head>
 <body>
-
-  We are launching soon!
-
-  Subscribe and get notified
-
-  Notify Me
-
-  &copy; Copyright Ping. All rights reserved.
-
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
-  </footer>
+  <div class="main">
+    <div class="container">
+      <!-- Header -->
+      <div class="header">
+        <div class="ping-icon-container">
+        </div>
+        <div class="heading-container"> 
+          <h1>We are launching <span class="soon">soon!</span></h1>
+            <p>Subscribe and get notified</p>
+       </div>  
+        <div class="notify-div">
+          <form>
+            <input type="email" class="email" name="email" placeholder="Your email address"/>
+            <button>Notify Me</button>
+          </form>
+        </div>
+      </div>
+      <!-- Hero image-->
+      <div class="image-container">
+       
+      </div>
+       <!-- Footer -->
+      <footer class="footer">
+        <div class="social">
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>
+        </div>
+        &copy; Copyright Ping. All rights reserved.
+      </footer>
+    </div>
+  </div>
+  <script src="script.js"> </script>
 </body>
 </html>
