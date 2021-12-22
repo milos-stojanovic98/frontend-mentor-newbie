@@ -26,11 +26,20 @@
          </div>
          <div class="form-container">
               <form class="form-action">
-                <input type="text" class="fields" placeholder="First Name">
-                <input type="text" class="fields" placeholder="Last Name">
-                <input type="email" class="fields" placeholder="Email Address">
-                <input type="password" class="fields" placeholder="Password">
-                <button type="submit" id="submit-btn" class="fields"> Claim your free trial </button>
+                <input type="text" class="fields" id="first-name" placeholder="First Name">
+                <label type="label" class="errors" id="first-name-error" value=""> </label>
+
+                <input type="text" class="fields" id="last-name" placeholder="Last Name">
+                <label  class="errors" id="last-name-error" value="">  </label>
+
+                <input type="email" class="fields" id="email" placeholder="Email Address">
+                <label class="errors" id="email-error"value=""></label>
+
+                <input type="password" class="fields" id="password" placeholder="Password">
+                <label  class="errors" id="password-error" value=""> </label>
+
+                <button type="button" id="submit-btn" class="fields"> Claim your free trial </button>
+                <label class="success" id="successful" value=""> </label>
               </form>
               <div class="terms-div">
               <p class="terms"> 
