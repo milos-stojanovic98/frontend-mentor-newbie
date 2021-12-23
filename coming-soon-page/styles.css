@@ -122,17 +122,26 @@ button{
 }
 .fa-facebook {
     color: var(--blue);
-    padding-right: 1rem;
+    margin-right: 1rem;
     font-size: 0.8rem;
+    cursor: pointer;
+    padding: 0.3rem;
+    border-radius: 50%;
 }
 .fa-twitter{
     color: var(--blue); 
-    padding-right: 1rem;
+    margin-right: 1rem;
     font-size: 0.8rem;
+    cursor: pointer;
+    padding: 0.3rem;
+    border-radius: 50%;
 }
 .fa-instagram{
     color: var(--blue); 
     font-size: 0.8rem;
+    cursor: pointer;
+    padding: 0.3rem;
+    border-radius: 50%;
 }
 .copyright-div{
     margin-bottom: 1rem;
@@ -140,4 +149,23 @@ button{
 .copyright{
     font-size: 0.5rem;
     font-weight: 500;
+}
+.fa-facebook:hover{
+    background-color: var(--blue);
+    color: white;
+}
+.fa-twitter:hover{
+    background-color: var(--blue);
+    color: white;
+}
+.fa-instagram:hover{
+    background-color: var(--blue);
+    color: white;
+}
+.error-label{
+    font-size: 0.5rem;
+    font-weight: 600;
+    color: var(--light-red);
+    padding-left: 1.2rem;
+    font-style: italic;
 }
