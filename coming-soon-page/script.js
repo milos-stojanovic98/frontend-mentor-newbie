@@ -10,6 +10,7 @@ submitBtn.addEventListener("click", () => {
         setTimeout( () => {
             emailField.value = "";
             errorLabel.innerHTML = "";
+            emailField.style.border = "solid 1px hsl(0, 0%, 59%)";
         }, 2000);
     }
 })
