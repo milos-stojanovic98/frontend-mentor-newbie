@@ -73,6 +73,12 @@ p{
 }
 .notify-div{
     margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+}
+.form{
+    display: flex;
+    flex-direction: column;
 }
 .email{
     width: 18.5rem;
@@ -168,4 +174,60 @@ button{
     color: var(--light-red);
     padding-left: 1.2rem;
     font-style: italic;
+}
+/* Media Query */ 
+@media only screen and (max-width: 375px){
+    .main{
+        height: 120%;
+    }
+    .container{
+        height: 100%;
+        width: 90%;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .header{
+        width: 90%;
+        height: 45%;
+    }
+    .ping-icon-container{
+        padding-top: 3rem;
+    }
+    .heading-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .email{
+        width: 15rem;
+        padding-left: 1.8rem;
+    }
+    .submit-btn{
+        margin-top: 0.6rem;
+        width: 15rem;
+    }
+    .heading-container h1{
+        font-size: 1rem;
+    }
+    .soon{
+        font-size: 1rem;
+    }
+    p{
+        font-size: 0.6rem;
+        font-weight: 500;
+    }
+    .footer{
+        margin-top: 2rem;
+    }
+    .image-container{
+        margin-top: 1rem;
+    }
+    .notify-div{
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: column;
+    }
+    .error-label{
+        text-align: center;
+        padding-left: 0;
+    }
 }
