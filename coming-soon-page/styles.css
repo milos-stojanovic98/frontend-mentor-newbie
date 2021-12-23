@@ -126,7 +126,7 @@ button{
 .social{
     margin-top: 3rem;
 }
-.fa-facebook {
+.fa-facebook-f {
     color: var(--blue);
     margin-right: 1rem;
     font-size: 0.8rem;
@@ -156,7 +156,7 @@ button{
     font-size: 0.5rem;
     font-weight: 500;
 }
-.fa-facebook:hover{
+.fa-facebook-f:hover{
     background-color: var(--blue);
     color: white;
 }
