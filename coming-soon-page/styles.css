@@ -21,4 +21,123 @@
     padding: 0;
     box-sizing: border-box;
     font-family: var(--font-main);
+    font-size: 20px;
+}
+.main{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container{
+    height: 100%;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+.header{
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+}
+.ping-icon-container{
+    display: flex;
+    justify-content: center;
+}
+.ping-icon-container img{
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.heading-container{
+    margin-top: 2rem;
+}
+.heading-container h1{
+    color:var(--gray);
+    font-size: 1.7rem;
+    font-weight: 500;
+    text-align: center;
+}
+.soon{
+    color: var(--very-dark-blue);
+    font-size: 1.7rem;
+    font-weight: 700;
+}
+p{
+    margin-top: 0.7rem;
+    text-align: center;
+    font-size: 0.7rem;
+    font-weight: 600;
+}
+.notify-div{
+    margin-top: 2rem;
+}
+.email{
+    width: 18.5rem;
+    height: 2.3rem;
+    margin-right: 0.2em;
+    border-radius: 1.2rem;
+    border: solid var(--gray) 1px;
+    font-size: 0.7rem;
+    font-weight: 500;
+    padding-left: 1rem;
+}
+.email:focus{
+   outline: none;
+}
+button{
+    height: 2.3rem;
+    width: 8.5rem;
+    border-radius: 1.2rem;
+    background-color: var(--blue);
+    color: white;
+    font-size: 0.7rem;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+}
+.image-container{
+    width: 70%;
+    height: 40%;
+}
+.image-container img{
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+}
+.footer{
+    height: 40%;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.social{
+    margin-top: 3rem;
+}
+.fa-facebook {
+    color: var(--blue);
+    padding-right: 1rem;
+    font-size: 0.8rem;
+}
+.fa-twitter{
+    color: var(--blue); 
+    padding-right: 1rem;
+    font-size: 0.8rem;
+}
+.fa-instagram{
+    color: var(--blue); 
+    font-size: 0.8rem;
+}
+.copyright-div{
+    margin-bottom: 1rem;
+}
+.copyright{
+    font-size: 0.5rem;
+    font-weight: 500;
 }
